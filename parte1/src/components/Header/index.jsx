@@ -4,7 +4,7 @@ import login from '../../assets/icons/login.png'
 import carrinho from '../../assets/icons/carrinho.png'
 import sideBar from '../../assets/icons/sideBar.png'
 import s from './styles.module.css'
-import { CategoryMenu } from '../../resources/categoryMenu'
+import { CategoryMenu } from '../../resources/categoryMenu.js'
 import { HeaderMobile } from './Mobile/Menu'
 
 export function Header(){
