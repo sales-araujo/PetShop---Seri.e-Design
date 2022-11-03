@@ -1,0 +1,189 @@
+.containerHeaderPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  transform: translateY(0);
+  z-index: 99;
+}
+
+.wrapperHeader{
+  width: 100%;
+  max-width: 73.125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+.searchProductWrapper{
+  display: flex;
+  border: 1px solid #ccc;
+  padding: .5rem .7rem;
+}
+
+.searchProductWrapper input{
+  border: 0;
+}
+
+.searchProductWrapper input:focus{
+  outline: 0;
+}
+
+.logoPage{
+  max-width: 100%;
+}
+
+.iconsHeader{
+  display: flex;
+  gap: 1rem;
+}
+
+.searchProductWrapper span,
+.iconsHeader img{
+  cursor: pointer;
+}
+
+.containerNavBar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem;
+  background-color: #8158C5;
+}
+
+.wrapperNavBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menuItem a{
+  text-decoration: none;
+  color: #fff;
+  font-size: .875rem;
+}
+
+.wrapperNavBar .sideBar{
+  display: flex;
+  cursor: pointer;
+}
+
+/* Mobile */
+.containerSideBarMobile{
+  display: none;
+}
+
+.modalContainerHeader{
+  display: none;
+}
+
+.closeIcon{
+  width: 35px;
+  height: 35px;
+  display: flex;
+}
+
+.sideBarIcon.disabled,
+.closeIcon.disabled{
+  display: none;
+}
+
+@media screen and (max-width: 1170px){
+  .wrapperNavBar{
+    gap: 1.5rem;
+  }
+}
+
+@media screen and  (max-width: 1024px){
+  .containerSideBarMobile{
+    display: flex;
+  }
+
+  .containerSideBarMobile button{
+    background-color: transparent;
+    border: 0;
+  }
+
+  .sideBarIcon{
+    display: flex;
+  }
+
+  .activeModal{
+    display: flex;
+  }
+
+  .containerHeaderPage{
+    -webkit-box-shadow: 0px 15px 17px -8px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 15px 17px -8px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 17px -8px rgba(0,0,0,0.2);
+  }
+
+  .wrapperHeader{
+    position: relative;
+  }
+
+  .containerNavBar{
+    display: none;
+  }
+
+  .modalContainerHeader{
+    width: 100%;
+    max-width: 12rem;
+    max-height: 20rem;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-100%, 10%);
+    -webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+  }
+  
+  .containerNavBarMobile{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .wrapperNavBarMobile{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+
+  .wrapperNavBarMobile a{
+    text-decoration: none;
+    color: #999;
+    font-weight: 500;
+    font-size: .875rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .searchProductWrapper{
+    display: none;
+  }
+
+  .wrapperHeader .logoPage img{
+    width: 12.5rem;
+  }
+
+  .modalContainerHeader{
+    transform: translate(20%, 10%);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .wrapperHeader .logoPage img{
+    width: 10.625rem
+  }
+}

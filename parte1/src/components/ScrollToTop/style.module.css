@@ -1,0 +1,52 @@
+.arrowScroll{
+  position: fixed;
+  right: 3%;
+  bottom: 13%;
+  z-index: 999;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.iconWhatsapp{
+  position: fixed;
+  right: 3%;
+  bottom: 4%;
+  z-index: 999;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  animation: treme 800ms infinite alternate;
+}
+
+@keyframes treme {
+  from {
+    transform: translateX(-3px);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .arrowScroll{
+    bottom: 14%;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .arrowScroll{
+    bottom: 12%;
+  }
+
+  .arrowScroll img{
+    width: 49px;
+    height: 49px;
+  }
+
+  .iconWhatsapp img{
+    width: 46px;
+    height: 46px;
+  }
+}

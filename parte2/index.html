@@ -25,7 +25,16 @@
 		<!--- RESPOSTA 1 ---->
 		<script>
 			console.log('resposta 1');
-			//insira a resposta aqui.
+
+      let array = []
+
+		  for(let n = 0; n < 100; n++){
+        if(n % 7 === 0){
+          array.push(n)
+        } 
+      }
+
+      console.log(array)
 		</script>
 
 		<div class="border"></div>
@@ -34,7 +43,18 @@
 		<!--- RESPOSTA 2 ---->
 		<script>
 			console.log('resposta 2');
-			//insira a resposta aqui.
+      
+			function joinWords(texto, vezes){
+        let newWord = ''
+
+        for(let i = 1; i <= vezes; i++){
+          newWord = newWord + `${texto}, `
+        }
+        
+        return newWord
+      }
+
+      console.log(joinWords('Bola', 3))
 		</script>
 
 		<div class="border"></div>
@@ -49,7 +69,8 @@
 		<!--- RESPOSTA 3 ---->
 		<script>
 			console.log('resposta 3');
-			//insira a resposta aqui.
+			$('.pai').append($('.filho'))
+      console.log("$('.pai').append($('.filho'))")
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 4 ---->
@@ -61,14 +82,19 @@
 			<li>inserir uma classe 'last' no último parágrafo</li>
 		</ol>
 		<!--- RESPOSTA 4 ---->
-		<div style="display: none;">
+		<div class="res4" style="display: none;">
 			<p>texto</p>
 			<p>texto</p>
 			<p>texto</p>
 		</div>
 		<script>
 			console.log('resposta 4');
-			//insira a resposta aqui.
+
+			$('.res4 p:nth-child(2)').text('Texto Alterado')
+			$('.res4 p:last-child').addClass('last')
+
+      console.log("$('.res4 p:nth-child(2)').text('Texto Alterado')\n",
+      "$('.res4 p:last-child').addClass('last')")
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 5 ---->
@@ -77,7 +103,12 @@
 		<!--- RESPOSTA 5 ---->
 		<script>
 			console.log('resposta 5');
-			//insira a resposta aqui.
+
+			function verifyAge(age){
+        return age > 18 ? "maior idade" : "menor idade"
+      }
+
+      console.log(verifyAge(34))
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 6 ---->
@@ -96,7 +127,14 @@
 				nomeObj: 'Mouse',
 				pesoObj: '150g'
 			}
-			//insira a resposta aqui.
+			
+      function objToArr(obj){
+        obj.nomeObj = 'Teclado'
+        obj.pesoObj = '500g'
+				return Object.entries(obj)
+      } 
+
+			console.log(objToArr(obj))
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 7 ---->
@@ -110,7 +148,19 @@
 		<!--- RESPOSTA 7 ---->
 		<script>
 			console.log('resposta 7');
-			//insira a resposta aqui.
+
+      const text = "Eu quero trabalhar na Seri.e Design"
+
+      const reverseText = text.split(' ').reverse('').join('!')
+      const reverseText2 = text.split('').reverse('').join('').split(' ').join('!')
+      const lastLetter = text.slice(-1)
+      const quantityLetter = text.length
+
+      console.log(reverseText)
+      console.log(reverseText2)
+      console.log(lastLetter) 
+      console.log(quantityLetter)
+      console.log(typeof quantityLetter)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 8 ---->
@@ -120,15 +170,22 @@
 
 		<p>faça uma função para adicionar o atributo 'data-id' em cada uma das divs, com o valor sendo a posição que se encontra a div na lista. Ex.: &lt;div data-id="2"&gt;</p>.
 		<!--- RESPOSTA 8 ---->
-
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+    <div class="res8">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 		<script>
 			console.log('resposta 8');
-			//insira a resposta aqui.
+			const divs = document.querySelectorAll('.res8 div')
+
+      divs.forEach((div, index) => {
+        div.setAttribute('data-id', index + 1)
+      })
+
+      console.log(divs)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 9 ---->
@@ -142,7 +199,7 @@
 		<!--- RESPOSTA 9 ---->
 		<div class="content" style="margin: 20px;">
 			<ul>
-				<li style="list-style: none; padding:10px 0; background: #eee; width: 180px; text-align: center;">Categoria
+				<li id="btnCategory" style="list-style: none; padding:10px 0; background: #eee; width: 180px; text-align: center;">Categoria
 					<div class="subcontainer">
 						<ul style="display: none;">
 							<li>Subcategoria</li>
@@ -153,7 +210,12 @@
 		</div>
 		<script>
 			console.log('resposta 9');
-			//insira a resposta aqui.
+			
+      $('#btnCategory').on('click', () => {
+        $('.subcontainer ul').css('display', 'block')
+        $('.content').addClass('active')
+        $('.subcontainer').addClass('active')
+      })
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 10 ---->
@@ -187,7 +249,7 @@
 		</ol>
 		<!--- RESPOSTA 10 ---->
 		<div>
-			<p style="color: #F00;">RESPOSTA: </p>
+			<p style="color: #F00;">RESPOSTA: 4</p>
 		</div>
 	</div>
 </body>

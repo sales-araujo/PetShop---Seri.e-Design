@@ -1,0 +1,150 @@
+.containerNewsletter{
+  width: 100%;
+  padding: 2rem .7rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #8158C5;
+}
+
+.containerInfoNewsletter{
+  width: 100%;
+  max-width: 73.125rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #FFA200;
+  padding-bottom: 2rem;
+}
+
+.inputFormWrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.wrapperInfoNewsletter{
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.wrapperInfoNewsletter p{
+  font-size: .875rem;
+  font-weight: lighter;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.wrapperInfoNewsletter span{
+  font-weight: 600;
+}
+
+.titleWrapperNewsletter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 0 5rem;
+}
+
+.titleWrapperNewsletter h2{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.titleWrapperNewsletter p{
+  font-size: .875rem;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.formNewsletter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.formNewsletter input{
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  background-color: transparent;
+  transition: 400ms ease;
+  color: #fff;
+}
+
+.formNewsletter input::placeholder{
+  color: #fff;
+  font-weight: 400;
+}
+
+.formNewsletter input:nth-child(2){
+  width: 14rem;
+}
+
+.formNewsletter input:focus{
+  outline: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.formNewsletter button{
+  background-color: #FFA200;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.formNewsletter button:hover{
+  border: 1px solid #FFA200;
+  background-color: transparent;
+}
+
+.messageSend{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 14.375rem;
+  margin: 0 auto;
+}
+
+.messageSend img{
+  width: 2.5rem;
+}
+
+.messageSend p{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 520px){
+  .wrapperInfoNewsletter p{
+    font-size: .75rem;
+  }
+
+  .titleWrapperNewsletter h2{
+    font-size: 1.625rem;
+  }
+}
