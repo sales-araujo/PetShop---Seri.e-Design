@@ -1,4 +1,4 @@
-import { CategoryMenu } from '../../../../resources/categoryMenu'
+import { CategoryMenu } from '../../../../resources/CategoryMenu.jsx'
 import sideBar from '../../../../assets/icons/sideBar.png'
 import close from '../../../../assets/icons/close.png'
 import s from '../../styles.module.css'

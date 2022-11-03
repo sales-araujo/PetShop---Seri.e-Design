@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ImagesBanners } from '../../resources/ImagesBanners.js'
+import { ImagesBanners } from '../../resources/ImagesBanners.jsx'
 import { Arrows } from "./Arrows";
 import departament01 from '.././../assets/images/departament-01.png'
 import departament02 from '.././../assets/images/departament-02.png'

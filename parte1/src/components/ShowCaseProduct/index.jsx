@@ -1,5 +1,5 @@
-import { CollectionProductNews } from "../../resources/CollectionsProduct.js"
-import { CollectionProductHighlights } from "../../resources/CollectionsProduct.js"
+import { CollectionProductNews } from "../../resources/CollectionsProduct.jsx"
+import { CollectionProductHighlights } from "../../resources/CollectionsProduct.jsx"
 import { ListShelfProducts } from "./ListShelfProducts"
 import bannerDog from '../../assets/images/bannerDog.png'
 import bannerCat from '../../assets/images/bannerCat.png'
